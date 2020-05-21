@@ -75,6 +75,12 @@ d/home/bungbu/workspace
 d/home/bungbu/workspace/cli-help
 	README.md
 16
+d/home/bungbu/workspace
+	..
+0
+d/home/bungbu
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -106,8 +112,8 @@ D/mnt/d
 	Runing-WSL
 9
 D/mnt/d/Runing-WSL
-	sourcecode1
-4
+	..
+0
 D
 
 # Command line history (oldest to newest):
