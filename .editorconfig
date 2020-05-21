@@ -1,0 +1,47 @@
+# EditorConfig is awesome: http://EditorConfig.org
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[{Dockerfile,Dockerfile.template.erb,Dockerfile.sample,Dockerfile.tmpl.php}]
+indent_size = 4
+
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+
+# Markdown Files
+[*.md]
+trim_trailing_whitespace = false
+indent_style = space
+indent_size = 4
+max_line_length = off
+
+
+# Bash Files
+[*.sh]
+indent_size = 2
+end_of_line = lf
+
+
+# Batch Files
+[*.{cmd,bat}]
+end_of_line = crlf
+
+
+# JSON Files
+[*.{json,json5}]
+indent_size = 2
+
+
+# Web Files
+[*.{htm,html,js,ts,tsx,css,sass,scss,less,svg,vue}]
+indent_size = 2
+

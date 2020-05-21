@@ -1,0 +1,31 @@
+# my home linux system
+
+*.log
+.cache/*
+screenrecord/*
+*.mozilla/*
+.ICEauthority
+.Xauthority
+.codeintel/*
+.dbus/*
+.dmrc
+.gconf/*
+.gksu.lock
+.gnome2/*
+.icons/*
+.linuxmint/*
+.local/*
+.macromedia/*
+.nv/*
+.ssr/*
+.themes/*
+.thumbnails/*
+.xfce4-session.verbose-log
+.xfce4-session.verbose-log.last
+.xinputrc
+.xsession-errors
+Downloads
+<<<<<<< HEAD
+=======
+.dotfiles
+>>>>>>> d6b87404eb89fb9103e7578adb649a707d4cd64f
