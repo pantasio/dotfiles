@@ -83,6 +83,8 @@ Plug 'ekalinin/Dockerfile.vim'  " Vim syntax file & snippets for Docker's Docker
 "
 Plug 'editorconfig/editorconfig-vim'
 
+Plug 'vimwiki/vimwiki'
+
 call plug#end()
 
 syntax on
@@ -228,19 +230,71 @@ nmap <Leader>gp <Plug>(GitGutterPrevHunk)  " git previous
 nmap <Leader>ga <Plug>(GitGutterStageHunk)  " git add (chunk)
 nmap <Leader>gu <Plug>(GitGutterUndoHunk)   " git undo (chunk)
 
-
-
-
-
 " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
 
+" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+" Vimwiki - Personal Wiki for Vim
+" https://github.com/vimwiki/vimwiki
 
+let g:vimwiki_list = [{'path': '/mnt/d/cli-help', 'syntax': 'markdown'}]
+au FileType vimwiki setlocal shiftwidth=4 tabstop=4 noexpandtab
 
+" vimwiki with markdown support
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 
+" helppage -> :h vimwiki-syntax
 
+" vim-instant-markdown - Instant Markdown previews from Vim
+" https://github.com/suan/vim-instant-markdown
 
+let g:instant_markdown_autostart = 0  " disable autostart
+map <leader>md :InstantMarkdownPreview<CR><F9>
+
+" Customs Header color
+:hi VimwikiHeader1 guifg=#FF0000
+:hi VimwikiHeader2 guifg=#00FF00
+:hi VimwikiHeader3 guifg=#0000FF
+:hi VimwikiHeader4 guifg=#FF00FF
+:hi VimwikiHeader5 guifg=#00FFFF
+:hi VimwikiHeader6 guifg=#FFFF00
+
+" Vimwiki todo list
+map <leader>tt :VimwikiToggleListItem<CR>
+map <leader>tr :VimwikiToggleRejectedListItem<CR>
+
+" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+" Keybind
+
+" " NERDtree
+" nnoremap <F2> :NERDTreeToggle<CR>
+" nnoremap <silent> <leader>t :NERDTreeToggle<CR>
+" nnoremap <silent> <leader>n :NERDTreeFocus<CR>
+" nnoremap <silent> <leader>f :NERDTreeFind<CR>
+"
+" " Undotree
+" nnoremap <F5> :UndotreeToggle<CR>
+" nnoremap <silent> <leader>u :UndotreeFocus<CR>
+"
+" " Tagbar_markdown_setup
+" nnoremap <F8> :TagbarToggle<CR>
+"
+" " TComment
+" map <leader>cc :TComment<CR>
+"
+" " GitGutter
+" nmap <Leader>gn <Plug>(GitGutterNextHunk)  " git next
+" nmap <Leader>gp <Plug>(GitGutterPrevHunk)  " git previous
+" nmap <Leader>ga <Plug>(GitGutterStageHunk)  " git add (chunk)
+" nmap <Leader>gu <Plug>(GitGutterUndoHunk)   " git undo (chunk)
+
+" Vimwiki todo list
+" map <leader>wt :VimwikiToggleListItem<CR>
+" map <leader>wr :VimwikiToggleRejectedListItem<CR>
+"
+
+" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 

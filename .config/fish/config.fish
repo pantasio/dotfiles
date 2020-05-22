@@ -74,7 +74,7 @@ function rf; source ~/.config/fish/config.fish && echo 'reload config.fish DONE!
 
 function et; nvim ~/.tmux.conf; end
 function ev; nvim ~/.config/nvim/init.vim; end
-#function rv; source ~/.config/nvim/init.vim && echo 'reload init.vim DONE!!!'; end
+#function rv; source ~/.config/nvim/init.vim && echo 'reload Nvim Config DONE!!!'; end
 function eg; nvim ~/.config/git/config; end
 
 # Config ssh
